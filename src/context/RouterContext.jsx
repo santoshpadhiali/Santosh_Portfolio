@@ -27,6 +27,7 @@ export const RouterProvider = ({ children }) => {
       } else {
         setCurrentPath(window.location.pathname || '/');
       }
+      window.scrollTo(0, 0);
     };
 
     window.addEventListener('popstate', handlePopState);
@@ -41,16 +42,17 @@ export const RouterProvider = ({ children }) => {
   const navigate = (toPath) => {
     if (!toPath) return;
 
-    // Normalizing path
     const normalized = toPath.startsWith('/') ? toPath : `/${toPath}`;
     
     if (normalized !== currentPath) {
       window.history.pushState({}, '', normalized);
       setCurrentPath(normalized);
+      // Instant reset to top so no scroll stutter happens while DOM updates
+      window.scrollTo(0, 0);
+    } else {
+      // If clicking the current tab, smoothly scroll to top of current page
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-
-    // Smooth scroll to top on page transition
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -83,4 +85,3 @@ export const Link = ({ to, children, className = '', activeClassName = '', onCli
     </a>
   );
 };
-

@@ -73,9 +73,11 @@ function PortfolioApp() {
         onOpenResumeModal={() => setResumeModalOpen(true)}
       />
 
-      {/* Dynamic Active Page Content */}
-      <main className="flex-1">
-        {renderCurrentPage()}
+      {/* Dynamic Active Page Content with Silky Smooth Transition */}
+      <main className="flex-1 min-h-[75vh]">
+        <div key={currentPath} className="animate-fadeIn">
+          {renderCurrentPage()}
+        </div>
       </main>
 
       {/* Footer across all pages */}
