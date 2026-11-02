@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cpBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#18181b" />
+    </linearGradient>
+    <linearGradient id="cpViolet" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="editorBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181825" />
+      <stop offset="100%" stop-color="#11111b" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#cpBg)" />
+
+  <!-- Outer Window -->
+  <rect x="25" y="25" width="750" height="450" rx="12" fill="#181825" stroke="#313244" stroke-width="1.5" />
+
+  <!-- Window Header -->
+  <rect x="25" y="25" width="750" height="42" rx="12" fill="#1e1e2e" />
+  <rect x="25" y="52" width="750" height="15" fill="#1e1e2e" />
+
+  <!-- Traffic dots -->
+  <circle cx="48" cy="46" r="5" fill="#f38ba8" />
+  <circle cx="66" cy="46" r="5" fill="#f9e2af" />
+  <circle cx="84" cy="46" r="5" fill="#a6e3a1" />
+
+  <!-- Project Name & Live Room Badge -->
+  <text x="400" y="51" fill="#cdd6f4" font-family="system-ui, monospace, sans-serif" font-size="13" font-weight="600" text-anchor="middle">CodePulse • Live Room #algo-session-09</text>
+  
+  <rect x="635" y="36" width="125" height="22" rx="11" fill="#313244" />
+  <circle cx="648" cy="47" r="4" fill="#a6e3a1" />
+  <text x="657" y="51" fill="#a6e3a1" font-family="system-ui, sans-serif" font-size="10" font-weight="600">3 Users Live • Clerk</text>
+
+  <!-- Language Tabs Bar -->
+  <rect x="25" y="67" width="750" height="34" fill="#11111b" />
+  
+  <rect x="35" y="71" width="100" height="30" rx="6" fill="#1e1e2e" stroke="#89b4fa" stroke-width="1" />
+  <text x="85" y="90" fill="#89b4fa" font-family="system-ui, monospace" font-size="11" font-weight="bold" text-anchor="middle">JS solution.js</text>
+
+  <rect x="140" y="71" width="90" height="30" rx="6" fill="transparent" />
+  <text x="185" y="90" fill="#6c7086" font-family="system-ui, monospace" font-size="11" text-anchor="middle">Python main.py</text>
+
+  <rect x="235" y="71" width="85" height="30" rx="6" fill="transparent" />
+  <text x="277" y="90" fill="#6c7086" font-family="system-ui, monospace" font-size="11" text-anchor="middle">Java App.java</text>
+
+  <rect x="325" y="71" width="75" height="30" rx="6" fill="transparent" />
+  <text x="362" y="90" fill="#6c7086" font-family="system-ui, monospace" font-size="11" text-anchor="middle">C++ solver.cpp</text>
+
+  <!-- Run Code Button -->
+  <rect x="420" y="73" width="90" height="24" rx="12" fill="#a6e3a1" />
+  <text x="465" y="89" fill="#11111b" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">▶ Run Code</text>
+
+  <!-- Main Code Editor Left Side (25 to 540) -->
+  <rect x="25" y="101" width="515" height="250" fill="#181825" />
+  
+  <!-- Line numbers -->
+  <g font-family="monospace" font-size="11" fill="#585b70" text-anchor="end">
+    <text x="50" y="125">1</text>
+    <text x="50" y="145">2</text>
+    <text x="50" y="165">3</text>
+    <text x="50" y="185">4</text>
+    <text x="50" y="205">5</text>
+    <text x="50" y="225">6</text>
+    <text x="50" y="245">7</text>
+    <text x="50" y="265">8</text>
+    <text x="50" y="285">9</text>
+    <text x="50" y="305">10</text>
+    <text x="50" y="325">11</text>
+  </g>
+
+  <!-- Code Syntax -->
+  <g font-family="monospace" font-size="12">
+    <!-- Line 1 -->
+    <text x="68" y="125"><tspan fill="#cba6f7">import</tspan> <tspan fill="#f9e2af">{ StreamVideoClient }</tspan> <tspan fill="#cba6f7">from</tspan> <tspan fill="#a6e3a1">'@getstream/sdk'</tspan>;</text>
+    <!-- Line 2 -->
+    <text x="68" y="145"><tspan fill="#cba6f7">function</tspan> <tspan fill="#89b4fa">collaborativeRunner</tspan><tspan fill="#cdd6f4">(inputCode, language)</tspan> <tspan fill="#cdd6f4">{</tspan></text>
+    <!-- Line 3 -->
+    <text x="88" y="165"><tspan fill="#6c7086">// Multi-language isolated sandboxing</tspan></text>
+    <!-- Line 4 -->
+    <text x="88" y="185"><tspan fill="#cba6f7">const</tspan> <tspan fill="#f9e2af">sandboxResult</tspan> = <tspan fill="#cba6f7">await</tspan> <tspan fill="#89b4fa">executeInContainer</tspan><tspan fill="#cdd6f4">({</tspan></text>
+    <!-- Line 5 -->
+    <text x="108" y="205"><tspan fill="#f38ba8">lang</tspan><tspan fill="#cdd6f4">: language,</tspan> <tspan fill="#f38ba8">code</tspan><tspan fill="#cdd6f4">: inputCode,</tspan> <tspan fill="#f38ba8">timeoutMs</tspan><tspan fill="#cdd6f4">: 3000</tspan></text>
+    <!-- Line 6 -->
+    <text x="88" y="225"><tspan fill="#cdd6f4">});</tspan></text>
+    <!-- Line 7 -->
+    <text x="88" y="245"><tspan fill="#cba6f7">return</tspan> <tspan fill="#cdd6f4">{</tspan> <tspan fill="#f38ba8">output</tspan><tspan fill="#cdd6f4">: sandboxResult.logs,</tspan> <tspan fill="#f38ba8">status</tspan><tspan fill="#cdd6f4">:</tspan> <tspan fill="#a6e3a1">'SUCCESS'</tspan> <tspan fill="#cdd6f4">};</tspan></text>
+    <!-- Line 8 -->
+    <text x="68" y="265"><tspan fill="#cdd6f4">}</tspan></text>
+  </g>
+
+  <!-- Live Multi-User Cursors -->
+  <!-- Santosh Cursor -->
+  <line x1="330" y1="170" x2="330" y2="190" stroke="#f38ba8" stroke-width="2" />
+  <rect x="330" y="155" width="60" height="15" rx="3" fill="#f38ba8" />
+  <text x="360" y="166" fill="#11111b" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Santosh</text>
+
+  <!-- Collaborator Cursor -->
+  <line x1="260" y1="232" x2="260" y2="252" stroke="#89b4fa" stroke-width="2" />
+  <rect x="260" y="217" width="50" height="15" rx="3" fill="#89b4fa" />
+  <text x="285" y="228" fill="#11111b" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Dev #2</text>
+
+  <!-- Right Sidebar: Live Video Calls & Collaboration (540 to 775) -->
+  <rect x="540" y="101" width="235" height="374" fill="#11111b" stroke="#313244" stroke-width="1" />
+  
+  <text x="555" y="122" fill="#bac2de" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">GetStream Live Video</text>
+  
+  <!-- Video 1 (Santosh) -->
+  <rect x="550" y="132" width="215" height="85" rx="8" fill="#313244" stroke="#cba6f7" stroke-width="1.5" />
+  <circle cx="657" cy="168" r="22" fill="url(#cpViolet)" />
+  <text x="657" y="174" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">SP</text>
+  <rect x="558" y="196" width="95" height="16" rx="4" fill="#11111b" opacity="0.8" />
+  <text x="605" y="208" fill="#a6e3a1" font-family="system-ui, sans-serif" font-size="9" text-anchor="middle">Santosh (Host) 🎤</text>
+
+  <!-- Video 2 (Collaborator) -->
+  <rect x="550" y="225" width="215" height="85" rx="8" fill="#1e1e2e" />
+  <circle cx="657" cy="260" r="22" fill="#45475a" />
+  <text x="657" y="266" fill="#cdd6f4" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">💻</text>
+  <rect x="558" y="288" width="85" height="16" rx="4" fill="#11111b" opacity="0.8" />
+  <text x="600" y="300" fill="#89b4fa" font-family="system-ui, sans-serif" font-size="9" text-anchor="middle">Peer Engineer</text>
+
+  <!-- Live Chat Mini Stream -->
+  <text x="555" y="332" fill="#a6adc8" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">Live Room Chat</text>
+  <rect x="550" y="342" width="215" height="120" rx="8" fill="#181825" />
+  
+  <text x="558" y="360" fill="#cba6f7" font-family="system-ui, sans-serif" font-size="10" font-weight="bold">Santosh:</text>
+  <text x="558" y="374" fill="#cdd6f4" font-family="system-ui, sans-serif" font-size="10">Testing Python &amp; C++ sandboxing!</text>
+  
+  <text x="558" y="396" fill="#89b4fa" font-family="system-ui, sans-serif" font-size="10" font-weight="bold">Peer Dev:</text>
+  <text x="558" y="410" fill="#a6adc8" font-family="system-ui, sans-serif" font-size="10">Execution took 21ms! Fast! ⚡</text>
+
+  <rect x="558" y="430" width="199" height="24" rx="4" fill="#11111b" stroke="#45475a" stroke-width="1" />
+  <text x="568" y="446" fill="#6c7086" font-family="system-ui, sans-serif" font-size="10">Send instant chat...</text>
+
+  <!-- Bottom Terminal Output (Left side) -->
+  <rect x="25" y="351" width="515" height="124" fill="#11111b" stroke="#313244" stroke-width="1" />
+  <text x="40" y="372" fill="#a6adc8" font-family="system-ui, monospace" font-size="11" font-weight="bold">TERMINAL OUTPUT [Status: 200 OK • Time: 24ms]</text>
+  <text x="40" y="392" fill="#a6e3a1" font-family="system-ui, monospace" font-size="11">&gt; Sandbox initialized with Node.js v20.10 &amp; Python 3.11</text>
+  <text x="40" y="410" fill="#cdd6f4" font-family="system-ui, monospace" font-size="11">&gt; Test suite passed: 14/14 test cases verified</text>
+  <text x="40" y="428" fill="#89b4fa" font-family="system-ui, monospace" font-size="11">&gt; Socket.io sync state broadcast to all 3 connected clients.</text>
+  <text x="40" y="446" fill="#a6e3a1" font-family="system-ui, monospace" font-size="11">&gt; Ready for next compile.</text>
+</svg>
+

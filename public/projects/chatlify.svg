@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#bgGrad)" />
+  
+  <!-- Subtle grid lines -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="500" />
+    <line x1="400" y1="0" x2="400" y2="500" />
+    <line x1="600" y1="0" x2="600" y2="500" />
+  </g>
+
+  <!-- Window Frame -->
+  <rect x="40" y="35" width="720" height="430" rx="12" fill="#111827" stroke="#374151" stroke-width="1.5" />
+  
+  <!-- Window Header -->
+  <rect x="40" y="35" width="720" height="44" rx="12" fill="#1f2937" />
+  <rect x="40" y="65" width="720" height="15" fill="#1f2937" />
+  
+  <!-- Window Controls -->
+  <circle cx="65" cy="57" r="6" fill="#ef4444" />
+  <circle cx="85" cy="57" r="6" fill="#eab308" />
+  <circle cx="105" cy="57" r="6" fill="#22c55e" />
+  
+  <!-- App Title -->
+  <text x="400" y="62" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">CHATliFY • Real-time MERN &amp; Socket.io Messaging</text>
+  
+  <!-- Active Socket Badge -->
+  <rect x="660" y="47" width="85" height="20" rx="10" fill="#065f46" />
+  <circle cx="672" cy="57" r="4" fill="#34d399" />
+  <text x="682" y="61" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="10" font-weight="600">WS Connected</text>
+
+  <!-- Sidebar -->
+  <rect x="40" y="80" width="220" height="385" fill="#131d2e" stroke="#1f2937" stroke-width="1" />
+  
+  <!-- Sidebar Search -->
+  <rect x="55" y="95" width="190" height="32" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="75" y="115" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">Search conversations...</text>
+
+  <!-- Chat List Items -->
+  <!-- Item 1 Active -->
+  <rect x="48" y="140" width="204" height="60" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" />
+  <circle cx="75" cy="170" r="16" fill="url(#primaryGrad)" />
+  <text x="75" y="175" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Dev</text>
+  <circle cx="87" cy="180" r="4" fill="#22c55e" stroke="#1e293b" stroke-width="1.5" />
+  <text x="100" y="163" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Dev Team Room</text>
+  <text x="100" y="180" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Socket latency is 18ms 🔥</text>
+  <rect x="225" y="153" width="18" height="16" rx="8" fill="#3b82f6" />
+  <text x="234" y="165" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">2</text>
+
+  <!-- Item 2 -->
+  <rect x="48" y="210" width="204" height="55" rx="8" fill="transparent" />
+  <circle cx="75" cy="237" r="16" fill="#334155" />
+  <text x="75" y="242" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">SP</text>
+  <circle cx="87" cy="247" r="4" fill="#22c55e" stroke="#131d2e" stroke-width="1.5" />
+  <text x="100" y="233" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" font-weight="500">Santosh Padhiali</text>
+  <text x="100" y="249" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Cloudinary media ready</text>
+
+  <!-- Item 3 -->
+  <rect x="48" y="275" width="204" height="55" rx="8" fill="transparent" />
+  <circle cx="75" cy="302" r="16" fill="#4338ca" />
+  <text x="75" y="307" fill="#e0e7ff" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">JS</text>
+  <circle cx="87" cy="312" r="4" fill="#94a3b8" stroke="#131d2e" stroke-width="1.5" />
+  <text x="100" y="298" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" font-weight="500">JavaScript Hub</text>
+  <text x="100" y="314" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">JWT tokens refreshed</text>
+
+  <!-- Chat Main Area -->
+  <rect x="260" y="80" width="500" height="385" fill="#0f172a" />
+  
+  <!-- Chat Top Bar -->
+  <rect x="260" y="80" width="500" height="50" fill="#1e293b" opacity="0.6" />
+  <circle cx="285" cy="105" r="14" fill="url(#primaryGrad)" />
+  <text x="285" y="110" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Dev</text>
+  <text x="310" y="103" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Dev Team Room</text>
+  <text x="310" y="117" fill="#10b981" font-family="system-ui, sans-serif" font-size="11">● 6 members online • End-to-end encrypted</text>
+
+  <!-- Message Bubbles -->
+  <!-- Message 1 (Incoming) -->
+  <rect x="280" y="150" width="310" height="60" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="295" y="172" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">Alex • Full Stack Lead</text>
+  <text x="295" y="193" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="12.5">Great job on the low-latency Socket.io setup!</text>
+  <text x="555" y="202" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">10:42 AM</text>
+
+  <!-- Message 2 (Outgoing) -->
+  <rect x="420" y="225" width="320" height="70" rx="12" fill="url(#accentGrad)" />
+  <text x="435" y="247" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">You (Santosh)</text>
+  <text x="435" y="268" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12.5">REST APIs with Express and JWT auth</text>
+  <text x="435" y="284" fill="#f3e8ff" font-family="system-ui, sans-serif" font-size="12">are deployed with MongoDB clustering!</text>
+  <text x="705" y="288" fill="#e9d5ff" font-family="system-ui, sans-serif" font-size="10">10:44 AM ✓✓</text>
+
+  <!-- Message 3 (Incoming with Cloudinary media badge) -->
+  <rect x="280" y="310" width="280" height="75" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <rect x="295" y="322" width="60" height="50" rx="6" fill="#0284c7" opacity="0.4" />
+  <text x="325" y="352" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">🖼️</text>
+  <text x="365" y="340" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="600">architecture-diagram.png</text>
+  <text x="365" y="357" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Cloudinary CDN • 1.2 MB</text>
+  <text x="525" y="377" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">10:45 AM</text>
+
+  <!-- Bottom Chat Input Bar -->
+  <rect x="275" y="405" width="470" height="44" rx="22" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" />
+  <text x="300" y="432" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Type a real-time message...</text>
+  <circle cx="715" cy="427" r="15" fill="url(#primaryGrad)" />
+  <path d="M 710 422 L 722 427 L 710 432 Z" fill="#ffffff" />
+</svg>
+
