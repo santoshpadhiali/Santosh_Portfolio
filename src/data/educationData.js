@@ -1,9 +1,8 @@
 /**
  * =========================================================================
- * EDUCATION DATA CONFIGURATION
+ * EDUCATION DATA CONFIGURATION - MONALISA BEHERA
  * =========================================================================
- * Modify or update your academic milestones, degrees, institutions,
- * scores, and achievements here!
+ * Academic milestones, degrees, institutions, scores, and coursework.
  */
 
 export const educationData = [
@@ -14,76 +13,75 @@ export const educationData = [
     degree: "Bachelor of Technology (B.Tech)",
     field: "Computer Science and Engineering",
     period: "2022 – 2026",
-    status: "Final Year Student",
+    status: "B.Tech Undergraduate",
     gradeType: "CGPA",
-    score: "8.34 / 10",
+    score: "8.4 / 10",
     badge: "Current Degree",
     badgeColor: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
-    location: "Bhubaneswar, Odisha",
-    description: "Specializing in Computer Science & Engineering. Maintaining an exceptional 8.34 CGPA with a strong focus on full-stack software development, distributed systems, algorithms, and real-time computing.",
+    location: "Odisha, India",
+    description: "Pursuing Bachelor of Technology in Computer Science & Engineering. Maintaining an impressive 8.4 CGPA with comprehensive focus on Java Full Stack development, Data Structures & Algorithms, Object-Oriented Programming, and Database Management Systems.",
     keyCoursework: [
       "Data Structures & Algorithms (DSA)",
       "Object Oriented Programming (OOP)",
       "Database Management Systems (DBMS)",
-      "Computer Networks & Security",
-      "Operating Systems & Architecture",
-      "Web Technologies & Cloud Computing"
+      "Core Java & Java 8+ Features",
+      "Web Technologies (HTML5, CSS3, JS)",
+      "Software Engineering & Architecture"
     ],
     achievements: [
-      "Consistent academic top-performer with 8.34 CGPA",
-      "Built multiple production-ready full-stack projects during coursework",
-      "Active participant in coding challenges and technical seminars"
+      "Maintained consistent 8.4 CGPA across Computer Science semesters",
+      "Solved 150+ DSA problems on LeetCode and 400+ SQL queries on Oracle SQL",
+      "Completed industry internship at Hindustan Aeronautics Limited (HAL) Koraput"
     ]
   },
   {
     id: "intermediate",
-    institution: "RCM Science College",
+    institution: "Bansadhara Higher Secondary School, Gunupur",
     affiliation: "Council of Higher Secondary Education (CHSE Board)",
-    degree: "Higher Secondary Certificate (Intermediate / 12th)",
-    field: "Science Stream (PCMB)",
+    degree: "Higher Secondary Examination (Intermediate / 12th)",
+    field: "Science Stream",
     period: "2020 – 2022",
     status: "Completed",
-    gradeType: "Percentage",
-    score: "70.16%",
+    gradeType: "Score",
+    score: "79.8%",
     badge: "CHSE Board",
     badgeColor: "bg-blue-500/20 text-blue-400 border-blue-500/30",
-    location: "Odisha, India",
-    description: "Completed higher secondary education in the Science stream with high rigor in Mathematics, Physics, Chemistry, and fundamentals of logical computation.",
+    location: "Gunupur, Odisha",
+    description: "Completed higher secondary education in the Science stream with high academic excellence, developing strong analytical and quantitative foundations in Mathematics and Sciences.",
     keyCoursework: [
-      "Higher Mathematics & Calculus",
-      "Physics & Electronics Principles",
+      "Mathematics & Calculus",
+      "Physics & Logical Reasoning",
       "Chemistry & Problem Solving",
-      "English & Technical Communication"
+      "English Communication"
     ],
     achievements: [
-      "Graduated with 70.16% distinction in Science stream",
-      "Strong analytical foundation preparing for engineering entrance"
+      "Achieved a first-class score of 79.8% in CHSE Board examinations",
+      "Developed strong quantitative aptitude laying the groundwork for engineering"
     ]
   },
   {
     id: "matriculation",
-    institution: "NH High School",
+    institution: "Saraswati Vidya Mandir, Kashipur",
     affiliation: "Board of Secondary Education (BSE Board)",
     degree: "Secondary School Examination (Matriculation / 10th)",
     field: "General Academics & Sciences",
     period: "2019 – 2020",
     status: "Completed",
-    gradeType: "Percentage",
-    score: "64.5%",
+    gradeType: "Score",
+    score: "83.5%",
     badge: "BSE Board",
     badgeColor: "bg-purple-500/20 text-purple-400 border-purple-500/30",
-    location: "Odisha, India",
-    description: "Completed secondary school matriculation with a focus on Mathematics, Science, and Social Studies, developing disciplined study habits and curiosity for computers.",
+    location: "Kashipur, Odisha",
+    description: "Completed secondary school education with distinction, demonstrating disciplined academic dedication, logical problem solving, and science enthusiasm.",
     keyCoursework: [
-      "Foundational Mathematics & Geometry",
-      "General Science & Physics Basics",
-      "Language & Literature",
-      "Social Sciences & History"
+      "Mathematics & Geometry",
+      "General Science & Physics Fundamentals",
+      "Social Sciences",
+      "Languages & Literature"
     ],
     achievements: [
-      "Successfully cleared BSE board examinations",
-      "Eager participant in school science exhibitions and competitions"
+      "Secured an outstanding distinction score of 83.5% in BSE Board examinations",
+      "Active participant in school academic and science competitions"
     ]
   }
 ];
-

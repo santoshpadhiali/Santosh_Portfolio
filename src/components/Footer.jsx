@@ -55,7 +55,7 @@ export const Footer = ({ onDownloadResume, onOpenResumeModal }) => {
             </div>
 
             <p className="text-sm text-slate-400 max-w-sm leading-relaxed">
-              Aspiring Software Engineer &amp; Full Stack MERN Developer graduating from KMBB (BPUT) in 2026. Passionate about real-time distributed applications, clean code, and modern web UX.
+              Aspiring Java Full Stack Developer graduating in Computer Science &amp; Engineering from KMBB (BPUT) in 2026. Passionate about scalable backend systems, Spring Boot, WebSocket architectures, and relational database optimization.
             </p>
 
             {/* Social Icons Bar */}

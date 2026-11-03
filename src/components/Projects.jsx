@@ -6,7 +6,7 @@ import {
   IconEye,
   IconCheckCircle
 } from './Icons';
-import { projectsData, projectFilterCategories } from '../data';
+import { projectsData, projectFilterCategories, profileData } from '../data';
 import { ProjectModal } from './ProjectModal';
 
 export const Projects = () => {
@@ -44,7 +44,7 @@ export const Projects = () => {
             </span>
           </h2>
           <p className="mt-3 text-slate-400 text-base sm:text-lg">
-            Full-stack MERN applications, real-time collaboration engines, and interactive web platforms built with scalable architecture.
+            Java Full Stack applications, real-time WebSocket communication engines, and enterprise database solutions built with scalable architecture.
           </p>
         </div>
 
@@ -181,7 +181,7 @@ export const Projects = () => {
             </p>
           </div>
           <a
-            href="https://github.com/santoshpadhiali"
+            href={profileData.github}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-slate-800 hover:bg-slate-700 border border-slate-600 shadow-md transition-all shrink-0"

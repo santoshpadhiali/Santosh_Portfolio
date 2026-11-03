@@ -36,7 +36,7 @@ export const Contact = ({ onShowToast }) => {
       setLoading(false);
       setSubmitted(true);
       if (onShowToast) {
-        onShowToast("Message sent! Santosh will get back to you soon.");
+        onShowToast(`Message sent! ${profileData.preferredName} will get back to you soon.`);
       }
       setFormData({ name: '', email: '', subject: '', message: '' });
       setTimeout(() => setSubmitted(false), 5000);
@@ -149,7 +149,7 @@ export const Contact = ({ onShowToast }) => {
 
               {/* Instant WhatsApp Link */}
               <a
-                href="https://wa.me/918144107001?text=Hi%20Santosh,%20I%20am%20interested%20in%20your%20profile!"
+                href={`https://wa.me/918093174459?text=Hi%20${encodeURIComponent(profileData.preferredName)},%20I%20saw%20your%20portfolio!`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full inline-flex items-center justify-center gap-2.5 py-3 px-4 rounded-2xl font-bold text-sm text-white bg-emerald-600 hover:bg-emerald-500 transition-colors shadow-lg shadow-emerald-600/20"
@@ -177,7 +177,7 @@ export const Contact = ({ onShowToast }) => {
                   </div>
                   <h4 className="text-lg font-bold text-white">Message Sent Successfully!</h4>
                   <p className="text-sm text-slate-300">
-                    Thank you for reaching out. Santosh will reply to you shortly.
+                    Thank you for reaching out. {profileData.preferredName} will reply to you shortly.
                   </p>
                 </div>
               ) : (
@@ -238,7 +238,7 @@ export const Contact = ({ onShowToast }) => {
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      placeholder="Hello Santosh, I saw your portfolio and would like to discuss..."
+                      placeholder={`Hello ${profileData.preferredName}, I saw your portfolio and would like to discuss...`}
                       className="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500 transition-colors resize-none"
                     ></textarea>
                   </div>

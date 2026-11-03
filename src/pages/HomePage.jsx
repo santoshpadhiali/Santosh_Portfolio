@@ -76,7 +76,7 @@ export const HomePage = ({ onDownloadResume, onOpenResumeModal, onShowToast }) =
                   Projects ({projectsData.length})
                 </h3>
                 <p className="text-xs text-slate-400 mt-2 leading-relaxed">
-                  HireHub, AI Resume Builder, CHATliFY, and CodePulse with live demos and architecture.
+                  Digital Library System, Chat Next WebSocket app, and HAL Complaint System.
                 </p>
               </div>
               <div className="mt-4 pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs font-semibold text-blue-400">
@@ -98,7 +98,7 @@ export const HomePage = ({ onDownloadResume, onOpenResumeModal, onShowToast }) =
                   Skills &amp; Tech Stack
                 </h3>
                 <p className="text-xs text-slate-400 mt-2 leading-relaxed">
-                  MERN, Redux Toolkit, Google Gemini AI, Strapi, WebSockets, Tailwind, and Core CS.
+                  Java (Core &amp; 8+), Spring Boot, Hibernate, Oracle SQL, PostgreSQL, WebSocket, and DSA.
                 </p>
               </div>
               <div className="mt-4 pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs font-semibold text-emerald-400">
@@ -117,10 +117,10 @@ export const HomePage = ({ onDownloadResume, onOpenResumeModal, onShowToast }) =
                   <IconGraduationCap className="w-5 h-5" />
                 </div>
                 <h3 className="text-lg font-bold text-white group-hover:text-purple-400 transition-colors">
-                  Education (8.34 CGPA)
+                  Education (8.4 CGPA)
                 </h3>
                 <p className="text-xs text-slate-400 mt-2 leading-relaxed">
-                  B.Tech in CSE at KMBB (BPUT), Intermediate (70.16%), and Matriculation details.
+                  B.Tech in CSE at KMBB (BPUT), Intermediate (79.8%), and Matriculation (83.5%).
                 </p>
               </div>
               <div className="mt-4 pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs font-semibold text-purple-400">

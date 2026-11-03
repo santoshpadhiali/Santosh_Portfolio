@@ -1,104 +1,112 @@
 /**
  * =========================================================================
- * SKILLS DATA CONFIGURATION
+ * SKILLS DATA CONFIGURATION - MONALISA BEHERA
  * =========================================================================
- * Add, edit, or remove technical skills here. Any changes will immediately
- * reflect in the Skills & About sections of the portfolio!
+ * Comprehensive categorization of technical proficiencies, frameworks,
+ * databases, core concepts, and development tools.
  */
 
 export const skillsCategories = [
   {
-    id: "frontend",
-    title: "Frontend Development",
-    icon: "code",
-    color: "from-blue-500 to-cyan-400",
-    description: "Crafting fast, dynamic, and responsive web user interfaces.",
-    skills: [
-      { name: "React.js", level: 92, experience: "Advanced", badge: "Core" },
-      { name: "JavaScript (ES6+)", level: 92, experience: "Advanced", badge: "Core" },
-      { name: "Redux Toolkit", level: 88, experience: "Advanced", badge: "State Mgmt" },
-      { name: "Tailwind CSS", level: 90, experience: "Advanced", badge: "Styling" },
-      { name: "HTML5 & Semantic Web", level: 95, experience: "Expert", badge: "Markup" },
-      { name: "CSS3 & Animations", level: 88, experience: "Advanced", badge: "Styling" },
-      { name: "Bootstrap", level: 85, experience: "Proficient", badge: "Framework" },
-      { name: "Responsive UI/UX", level: 92, experience: "Advanced", badge: "Design" }
-    ]
-  },
-  {
     id: "backend",
-    title: "Backend & APIs",
+    title: "Backend & Frameworks",
     icon: "server",
-    color: "from-emerald-500 to-teal-400",
-    description: "Building scalable server architectures, REST APIs, and real-time sockets.",
+    color: "from-blue-500 to-indigo-500",
+    description: "Architecting enterprise-grade server-side applications, REST APIs, and business logic.",
     skills: [
-      { name: "Node.js", level: 88, experience: "Advanced", badge: "Runtime" },
-      { name: "Express.js", level: 86, experience: "Advanced", badge: "Framework" },
-      { name: "RESTful API Design", level: 90, experience: "Advanced", badge: "Architecture" },
-      { name: "Strapi Headless CMS", level: 85, experience: "Proficient", badge: "Headless CMS" },
-      { name: "Socket.io", level: 84, experience: "Proficient", badge: "Real-time" },
-      { name: "JWT Authentication", level: 88, experience: "Advanced", badge: "Security" },
-      { name: "Clerk Auth & GetStream", level: 80, experience: "Hands-on", badge: "SDK" }
+      { name: "Java (Core & Java 8+)", level: 92, experience: "Advanced", badge: "Core Language" },
+      { name: "Spring Boot & Spring Framework", level: 88, experience: "Advanced", badge: "Framework" },
+      { name: "Hibernate ORM", level: 86, experience: "Advanced", badge: "ORM" },
+      { name: "JDBC (Java Database Connectivity)", level: 90, experience: "Advanced", badge: "Data Access" },
+      { name: "RESTful API Design", level: 88, experience: "Advanced", badge: "Architecture" },
+      { name: "MVC Architecture", level: 90, experience: "Advanced", badge: "Design Pattern" },
+      { name: "Java 8+ (Streams, Lambdas)", level: 88, experience: "Proficient", badge: "Modern Java" }
     ]
   },
   {
     id: "database",
-    title: "Databases & Storage",
+    title: "Databases & Querying",
     icon: "database",
-    color: "from-purple-500 to-indigo-400",
-    description: "Designing structured and NoSQL schemas, queries, and media CDNs.",
+    color: "from-emerald-500 to-teal-400",
+    description: "Designing normalized schemas, complex querying, and transactional data persistence.",
     skills: [
-      { name: "MongoDB", level: 88, experience: "Advanced", badge: "NoSQL" },
-      { name: "Oracle SQL", level: 82, experience: "Proficient", badge: "RDBMS" },
-      { name: "Database Design & Modeling", level: 85, experience: "Proficient", badge: "Architecture" },
-      { name: "Cloudinary Media CDN", level: 86, experience: "Proficient", badge: "Cloud Media" }
+      { name: "Oracle SQL (400+ Queries)", level: 94, experience: "Advanced", badge: "RDBMS Core" },
+      { name: "PostgreSQL", level: 86, experience: "Proficient", badge: "RDBMS" },
+      { name: "MySQL", level: 90, experience: "Advanced", badge: "RDBMS" },
+      { name: "DBMS & Schema Normalization", level: 88, experience: "Advanced", badge: "Foundations" },
+      { name: "Complex Joins, Subqueries & CTEs", level: 92, experience: "Advanced", badge: "SQL Mastery" },
+      { name: "CRUD & Transaction Management", level: 90, experience: "Advanced", badge: "Data Integrity" }
+    ]
+  },
+  {
+    id: "realtime",
+    title: "Real-Time & Networking",
+    icon: "terminal",
+    color: "from-cyan-500 to-blue-400",
+    description: "Low-latency bidirectional communication pipelines and event-driven messaging.",
+    skills: [
+      { name: "WebSocket (STOMP Protocol)", level: 88, experience: "Advanced", badge: "Bidirectional" },
+      { name: "SockJS Fallback Engine", level: 86, experience: "Proficient", badge: "Protocol" },
+      { name: "Multi-Channel Broadcast Messaging", level: 86, experience: "Proficient", badge: "Pub/Sub" },
+      { name: "Thymeleaf Server-side Templating", level: 84, experience: "Proficient", badge: "Templating" }
+    ]
+  },
+  {
+    id: "frontend",
+    title: "Frontend & UI Engineering",
+    icon: "code",
+    color: "from-purple-500 to-pink-400",
+    description: "Creating responsive, accessible, and user-centric web interfaces.",
+    skills: [
+      { name: "HTML5 Semantic Web", level: 92, experience: "Expert", badge: "Markup" },
+      { name: "CSS3 & Modern Styling", level: 88, experience: "Advanced", badge: "Styling" },
+      { name: "JavaScript (ES6+)", level: 85, experience: "Proficient", badge: "Scripting" },
+      { name: "Responsive Layouts & Media Queries", level: 90, experience: "Advanced", badge: "Design" },
+      { name: "DOM Manipulation & Event Handling", level: 86, experience: "Proficient", badge: "Interactive" }
     ]
   },
   {
     id: "core",
-    title: "Core CS & Languages",
+    title: "Core CS & Problem Solving",
     icon: "cpu",
     color: "from-amber-500 to-orange-400",
-    description: "Strong theoretical foundations driving optimized problem solving.",
+    description: "Algorithmic thinking, data structures, and computer science paradigms.",
     skills: [
-      { name: "Data Structures & Algorithms (DSA)", level: 85, experience: "Solid Foundation", badge: "CS Core" },
-      { name: "Object Oriented Programming (OOP)", level: 90, experience: "Advanced", badge: "Paradigm" },
-      { name: "Database Management Systems (DBMS)", level: 86, experience: "Proficient", badge: "CS Core" },
-      { name: "C / C++ Basics", level: 80, experience: "Academic", badge: "Language" },
-      { name: "Core Java Basics", level: 75, experience: "Academic", badge: "Language" },
-      { name: "Python Basics", level: 75, experience: "Academic", badge: "Language" }
+      { name: "Data Structures & Algorithms (DSA)", level: 88, experience: "150+ Solved", badge: "LeetCode" },
+      { name: "Object Oriented Programming (OOP)", level: 94, experience: "Expert", badge: "Core Paradigm" },
+      { name: "Regular Expressions (Regex)", level: 86, experience: "Proficient", badge: "Pattern Matching" },
+      { name: "Database Management Systems (DBMS)", level: 88, experience: "Advanced", badge: "Core CS" }
     ]
   },
   {
     id: "tools",
-    title: "Dev Tools & AI Integration",
+    title: "Dev Tools & Environment",
     icon: "terminal",
-    color: "from-pink-500 to-rose-400",
-    description: "Version control, build tools, AI APIs, testing, and modern developer environments.",
+    color: "from-rose-500 to-red-400",
+    description: "Version control, IDEs, API testing clients, and continuous problem-solving platforms.",
     skills: [
-      { name: "Google Gemini AI API", level: 88, experience: "Hands-on", badge: "Generative AI" },
-      { name: "Git & GitHub", level: 90, experience: "Advanced", badge: "VCS" },
-      { name: "Vite & Modern Bundlers", level: 90, experience: "Advanced", badge: "Build" },
-      { name: "Postman API Testing", level: 86, experience: "Proficient", badge: "Testing" },
-      { name: "VS Code & Debugging", level: 92, experience: "Advanced", badge: "IDE" },
-      { name: "Vercel / Cloud Deployment", level: 82, experience: "Hands-on", badge: "Hosting" }
+      { name: "Git & GitHub", level: 88, experience: "Advanced", badge: "Version Control" },
+      { name: "LeetCode & Problem Solving", level: 90, experience: "Active", badge: "Algorithms" },
+      { name: "Postman API Testing", level: 86, experience: "Proficient", badge: "API Testing" },
+      { name: "Eclipse / IntelliJ IDEA / VS Code", level: 90, experience: "Advanced", badge: "IDE" }
     ]
   }
 ];
 
 export const skillsQuickList = [
-  "React.js",
-  "Node.js",
-  "MongoDB",
-  "Express.js",
-  "Redux Toolkit",
-  "Google Gemini AI",
-  "Strapi CMS",
-  "Tailwind CSS",
-  "Socket.io",
-  "Oracle SQL",
-  "Cloudinary",
-  "JWT",
+  "Core Java (8+)",
+  "Spring Boot",
+  "Hibernate ORM",
+  "Oracle SQL (400+ Queries)",
+  "PostgreSQL",
+  "MySQL",
+  "WebSocket (STOMP)",
+  "JDBC",
+  "RESTful APIs",
+  "HTML5 & CSS3",
+  "JavaScript",
   "OOP",
-  "DSA",
+  "DSA (LeetCode 150+)",
+  "Regular Expressions",
   "Git & GitHub"
 ];

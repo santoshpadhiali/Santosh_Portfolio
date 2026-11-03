@@ -28,7 +28,7 @@ export const Hero = ({ onDownloadResume, onOpenResumeModal, onShowToast }) => {
   const handleDownloadClick = () => {
     onDownloadResume();
     if (onShowToast) {
-      onShowToast("Santosh's Resume downloaded successfully!");
+      onShowToast(`${profileData.preferredName}'s Resume downloaded successfully!`);
     }
   };
 
@@ -174,44 +174,44 @@ export const Hero = ({ onDownloadResume, onOpenResumeModal, onShowToast }) => {
                   <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-slate-900/90 border border-slate-800/90 backdrop-blur-md shadow-lg flex items-center justify-between">
                     <div>
                       <div className="text-sm font-bold text-white">{profileData.name}</div>
-                      <div className="text-xs text-cyan-400 font-medium">Full Stack MERN Dev</div>
+                      <div className="text-xs text-cyan-400 font-medium">{profileData.role}</div>
                     </div>
                     <div className="px-2.5 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/30 text-[11px] font-bold text-cyan-300">
-                      8.34 CGPA
+                      8.4 CGPA
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Floating Tech Badges */}
-              {/* Badge 1: React */}
+              {/* Badge 1: Java */}
               <div className="absolute -top-4 -left-4 px-3 py-2 rounded-xl bg-slate-900/90 border border-cyan-500/40 shadow-xl backdrop-blur-md flex items-center gap-2 animate-bounce [animation-duration:3s]">
                 <div className="w-6 h-6 rounded-md bg-cyan-500/20 flex items-center justify-center text-cyan-400 text-xs font-bold">
-                  ⚛
+                  ☕
                 </div>
-                <span className="text-xs font-bold text-white">React.js</span>
+                <span className="text-xs font-bold text-white">Java 17</span>
               </div>
 
-              {/* Badge 2: Node.js */}
+              {/* Badge 2: Spring Boot */}
               <div className="absolute -bottom-3 -left-3 px-3 py-2 rounded-xl bg-slate-900/90 border border-emerald-500/40 shadow-xl backdrop-blur-md flex items-center gap-2">
                 <div className="w-6 h-6 rounded-md bg-emerald-500/20 flex items-center justify-center text-emerald-400 text-xs font-bold">
-                  JS
-                </div>
-                <span className="text-xs font-bold text-white">Node.js</span>
-              </div>
-
-              {/* Badge 3: Socket.io / Real-Time */}
-              <div className="absolute -top-4 -right-3 px-3 py-2 rounded-xl bg-slate-900/90 border border-purple-500/40 shadow-xl backdrop-blur-md flex items-center gap-2 animate-bounce [animation-duration:3.5s]">
-                <span className="text-purple-400 text-xs">⚡</span>
-                <span className="text-xs font-bold text-white">Socket.io</span>
-              </div>
-
-              {/* Badge 4: MongoDB */}
-              <div className="absolute -bottom-3 -right-3 px-3 py-2 rounded-xl bg-slate-900/90 border border-amber-500/40 shadow-xl backdrop-blur-md flex items-center gap-2">
-                <div className="w-6 h-6 rounded-md bg-amber-500/20 flex items-center justify-center text-amber-400 text-xs font-bold">
                   🍃
                 </div>
-                <span className="text-xs font-bold text-white">MongoDB</span>
+                <span className="text-xs font-bold text-white">Spring Boot</span>
+              </div>
+
+              {/* Badge 3: WebSocket / STOMP */}
+              <div className="absolute -top-4 -right-3 px-3 py-2 rounded-xl bg-slate-900/90 border border-purple-500/40 shadow-xl backdrop-blur-md flex items-center gap-2 animate-bounce [animation-duration:3.5s]">
+                <span className="text-purple-400 text-xs">⚡</span>
+                <span className="text-xs font-bold text-white">WebSocket</span>
+              </div>
+
+              {/* Badge 4: Oracle SQL */}
+              <div className="absolute -bottom-3 -right-3 px-3 py-2 rounded-xl bg-slate-900/90 border border-amber-500/40 shadow-xl backdrop-blur-md flex items-center gap-2">
+                <div className="w-6 h-6 rounded-md bg-amber-500/20 flex items-center justify-center text-amber-400 text-xs font-bold">
+                  🗄️
+                </div>
+                <span className="text-xs font-bold text-white">Oracle SQL</span>
               </div>
 
             </div>

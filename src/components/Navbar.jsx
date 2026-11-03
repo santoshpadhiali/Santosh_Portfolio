@@ -49,7 +49,7 @@ export const Navbar = ({ onDownloadResume, onOpenResumeModal }) => {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-blue-500 to-indigo-600 p-[1.5px] transition-transform duration-200 group-hover:scale-105 shadow-md shadow-cyan-500/20">
               <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
                 <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 text-base">
-                  SP
+                  {profileData.avatarFallback}
                 </span>
               </div>
             </div>
@@ -59,7 +59,7 @@ export const Navbar = ({ onDownloadResume, onOpenResumeModal }) => {
               </span>
               <span className="text-[10px] font-medium text-slate-400 tracking-wider uppercase -mt-0.5 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                Software Developer
+                {profileData.role}
               </span>
             </div>
           </a>

@@ -1,162 +1,160 @@
 /**
  * =========================================================================
- * PROJECTS DATA CONFIGURATION
+ * PROJECTS DATA CONFIGURATION - MONALISA BEHERA
  * =========================================================================
- * Modify or add projects here. Every project card, modal details view,
- * tech stack tag, and GitHub link will automatically update across the portfolio!
+ * Real-world Java full-stack applications, real-time WebSocket systems,
+ * industry enterprise platforms, and problem solving achievements.
  */
 
 export const projectsData = [
   {
-    id: "hire-hub",
-    title: "HireHub",
-    subtitle: "Full-Stack Job Portal Application with Role-Based Access",
-    category: "Full Stack & Web Apps",
+    id: "digital-library-management",
+    title: "Digital Library Management System",
+    subtitle: "Java Full Stack System with Spring Boot, Hibernate & MySQL",
+    category: "Java Full Stack",
     featured: true,
-    image: "/projects/hirehub.svg",
-    githubUrl: "https://github.com/santoshpadhiali/Hire-HUB",
-    liveUrl: "https://github.com/santoshpadhiali/Hire-HUB",
-    badge: "Featured / Full-Stack MERN",
+    image: "/projects/library.svg",
+    githubUrl: "https://github.com/Misspuja12/Book-store",
+    liveUrl: "https://github.com/Misspuja12/Book-store",
+    badge: "Featured / Spring Boot & Hibernate",
+    badgeColor: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
+    summary: "Developed a Java Full Stack Library Management System using Spring Boot, Hibernate, and MySQL to manage books, members, and transactions efficiently.",
+    description: "Digital Library Management System is a comprehensive enterprise Java web application engineered to streamline the entire lifecycle of library operations. Built with Spring Boot and Hibernate ORM, it provides robust book inventory tracking, student membership management, automated issue/return processing, fine calculations, and secure role-based access following clean MVC architecture and RESTful API principles.",
+    highlights: [
+      "Developed a Java Full Stack Library Management System using Spring Boot, Hibernate, and MySQL to manage books, members, and transactions efficiently.",
+      "Implemented comprehensive CRUD operations, user authentication, and database integration while following MVC architecture and RESTful API design principles.",
+      "Designed normalized relational database schema with Hibernate ORM mapping entity relationships (One-to-Many, Many-to-One) across Books, Patrons, and Borrow Records.",
+      "Architected REST endpoints with proper HTTP status codes, validation, and structured exception handling.",
+      "Designed a responsive and clean user interface using HTML5, CSS3, and JavaScript focusing on efficient book discovery and librarian workflows."
+    ],
+    techStack: [
+      "Java 17",
+      "Spring Boot",
+      "Hibernate ORM",
+      "MySQL",
+      "RESTful APIs",
+      "MVC Architecture",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    metrics: [
+      { label: "Architecture", value: "Spring Boot MVC" },
+      { label: "Persistence", value: "Hibernate ORM" },
+      { label: "Database", value: "MySQL RDBMS" }
+    ]
+  },
+  {
+    id: "chat-next",
+    title: "Chat Next – Real-Time WebSocket Chat Application",
+    subtitle: "Bidirectional Real-Time Communication with Spring Boot & STOMP",
+    category: "Real-Time & Networking",
+    featured: true,
+    image: "/projects/chatnext.svg",
+    githubUrl: "https://github.com/Misspuja12/Chat-App",
+    liveUrl: "https://github.com/Misspuja12/Chat-App",
+    badge: "Real-Time / WebSocket (STOMP)",
     badgeColor: "bg-cyan-500/20 text-cyan-400 border-cyan-500/30",
-    summary: "Developed a full-stack Job Portal Platform (HireHub) using the MERN stack, enabling users to search, apply, and manage job applications efficiently with Redux Toolkit and Cloudinary.",
-    description: "HireHub is a modern, responsive, full-stack MERN (MongoDB, Express.js, React, Node.js) web application engineered to bridge the gap between job seekers (students/candidates) and recruiters (employers/companies). Built with state-of-the-art web technologies including Redux Toolkit, Tailwind CSS, Vite, JWT authentication, and Cloudinary, HireHub delivers a seamless hiring lifecycle: from candidate job discovery, real-time filtering, and one-click applications to recruiter company onboarding, job vacancy distribution, candidate resume reviews, and status management.",
+    summary: "Developed a real-time chat application using Java 17, Spring Boot, WebSocket (STOMP), SockJS, and Thymeleaf for instant bidirectional messaging.",
+    description: "Chat Next is an ultra-responsive, real-time bidirectional communication engine built with Java 17 and Spring Boot. Powered by the STOMP protocol over WebSocket with SockJS fallback, it delivers low-latency group and multi-channel conversations, user onboarding, message reactions, live search, and transcript exports.",
     highlights: [
-      "Developed a full-stack Job Portal Platform (HireHub) using the MERN stack, enabling users to search, apply, and manage job applications efficiently.",
-      "Designed a responsive and modern UI using React.js and Tailwind CSS with Redux Toolkit for centralized state management, focusing on user experience, performance, and accessibility.",
-      "Implemented JWT-based authentication with role-based access (Job Seekers & Recruiters) ensuring secure user management and protected routes.",
-      "Built scalable RESTful APIs with Node.js, Express.js, and MongoDB, supporting job listings, multi-criteria filtering, and application tracking.",
-      "Integrated Cloudinary for candidate resume storage, profile pictures, and recruiter company logos.",
-      "Full recruiter dashboard: company registration, posting vacancies, reviewing candidate resumes, and tracking pipeline stages (Applied, In Review, Shortlisted, Accepted, Rejected)."
+      "Developed a real-time chat application using Java 17, Spring Boot, WebSocket (STOMP), SockJS, and Thymeleaf for instant bidirectional messaging.",
+      "Implemented multi-channel chat rooms, user onboarding workflows, emoji message reactions, live text search, and transcript exports.",
+      "Configured STOMP message broker to handle pub/sub event broadcasting across connected clients with minimal network overhead.",
+      "Integrated SockJS fallback mechanism to guarantee uninterrupted connectivity across restrictive proxy environments.",
+      "Designed a responsive web interface using HTML5, CSS3, and JavaScript ensuring seamless communication across desktop and mobile screens."
     ],
     techStack: [
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Tailwind CSS",
-      "Redux Toolkit",
-      "Vite",
-      "JWT Auth",
-      "Cloudinary"
+      "Java 17",
+      "Spring Boot",
+      "WebSocket (STOMP)",
+      "SockJS",
+      "Thymeleaf",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
     ],
     metrics: [
-      { label: "Lifecycle", value: "Candidate & Recruiter" },
-      { label: "State Mgmt", value: "Redux Toolkit" },
-      { label: "Media Storage", value: "Cloudinary CDN" }
+      { label: "Latency", value: "Real-Time (<50ms)" },
+      { label: "Protocol", value: "STOMP & SockJS" },
+      { label: "Messaging", value: "Multi-Channel Broadcast" }
     ]
   },
   {
-    id: "ai-resume-builder",
-    title: "AI Resume Builder",
-    subtitle: "Dynamic Resume Builder with Google Gemini AI & Strapi Backend",
-    category: "AI & Cloud",
+    id: "complaint-management-system",
+    title: "Complaint Management System",
+    subtitle: "Enterprise Grievance Registration & Tracking System at HAL Koraput",
+    category: "Industry Experience & Enterprise",
     featured: true,
-    image: "/projects/airesume.svg",
-    githubUrl: "https://github.com/santoshpadhiali/Ai-resume-Billder",
-    liveUrl: "https://github.com/santoshpadhiali/Ai-resume-Billder",
-    badge: "AI Powered / Strapi CMS",
-    badgeColor: "bg-purple-500/20 text-purple-400 border-purple-500/30",
-    summary: "Built a dynamic resume builder using React.js with a Strapi backend for structured data management, integrated with Google Gemini AI for smart content generation.",
-    description: "An intelligent resume creation platform leveraging the power of Google Gemini AI to assist users in crafting professional, ATS-optimized resumes. Powered by a flexible Strapi Headless CMS backend for structured resume storage, dynamic sections, and instant PDF generation.",
-    highlights: [
-      "Built a dynamic resume builder using React.js with a Strapi backend for structured data management.",
-      "Integrated Google Gemini AI for smart content generation, automated bullet-point rewriting, and professional suggestions.",
-      "Dynamic form schemas allowing users to customize work history, education, certifications, and technical skills in real time.",
-      "ATS score optimization feedback to ensure resumes pass corporate screening algorithms.",
-      "Clean, modern UI designed with Tailwind CSS and Vite for sub-second build times and rendering."
-    ],
-    techStack: [
-      "React.js",
-      "Google Gemini AI",
-      "Strapi CMS",
-      "Tailwind CSS",
-      "Vite",
-      "REST APIs"
-    ],
-    metrics: [
-      { label: "AI Engine", value: "Google Gemini" },
-      { label: "CMS Backend", value: "Strapi Headless" },
-      { label: "Optimization", value: "ATS Compliant" }
-    ]
-  },
-  {
-    id: "chatlify",
-    title: "CHATliFY",
-    subtitle: "Real-time MERN Chat Application with Socket.io",
-    category: "Real-time & MERN",
-    featured: true,
-    image: "/projects/chatlify.svg",
-    githubUrl: "https://github.com/santoshpadhiali/CHATliFY",
-    liveUrl: "https://github.com/santoshpadhiali/CHATliFY",
-    badge: "Real-Time / Socket.io",
+    image: "/projects/complaint.svg",
+    githubUrl: "https://github.com/Misspuja12",
+    liveUrl: "https://github.com/Misspuja12",
+    badge: "Industry Project / HAL Koraput",
     badgeColor: "bg-blue-500/20 text-blue-400 border-blue-500/30",
-    summary: "Developed a scalable real-time chat application using MERN & Socket.io, enabling low-latency bidirectional communication with secure JWT authentication and Cloudinary media handling.",
-    description: "CHATliFY is an ultra-fast bidirectional communication platform built with the MERN stack and Socket.io. It supports one-on-one and group chat rooms, instant message broadcasting, media sharing powered by Cloudinary, active online user status, and secure JWT-based session protection.",
+    summary: "Contributed to the development of a Java Full Stack Complaint Management System for complaint registration, tracking, and resolution lifecycle management during internship at HAL.",
+    description: "Developed during an industrial internship at Hindustan Aeronautics Limited (HAL), Koraput Division. The platform facilitates digitized complaint registration, automated departmental ticket routing, status tracking, and resolution auditing for internal organizational operations.",
     highlights: [
-      "Low-latency bidirectional communication with Socket.io WebSockets",
-      "Secure JWT-based authentication with protected routes and cookie sessions",
-      "RESTful APIs engineered with Node.js & Express.js",
-      "MongoDB database modeling for scalable message threads and user profiles",
-      "Cloudinary integration for seamless image and media handling"
+      "Contributed to the development of a Java Full Stack Complaint Management System for complaint registration, tracking, and management.",
+      "Developed the frontend UI using HTML, CSS, and JavaScript, focusing on responsive layouts and user-friendly interfaces.",
+      "Gained practical exposure to Java, JDBC, MySQL, CRUD operations, database connectivity, and Java OOP concepts while contributing to the application.",
+      "Engineered secure database queries and transaction integrity ensuring grievance records are accurately preserved and updated."
     ],
     techStack: [
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Socket.io",
-      "JWT",
-      "Cloudinary",
-      "Tailwind CSS"
+      "Java",
+      "JDBC",
+      "MySQL",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "OOP",
+      "CRUD Operations"
     ],
     metrics: [
-      { label: "Latency", value: "< 50ms" },
-      { label: "Protocol", value: "WebSockets" },
-      { label: "Auth", value: "JWT Tokens" }
+      { label: "Organization", value: "HAL Koraput Division" },
+      { label: "Role", value: "Java Intern (2024)" },
+      { label: "Data Access", value: "JDBC & MySQL" }
     ]
   },
   {
-    id: "code-pulse",
-    title: "CodePulse (Code Plus)",
-    subtitle: "Real-time Collaborative Coding Platform with Multi-Language Sandbox",
-    category: "Collaboration & Cloud",
+    id: "dsa-sql-problem-solving",
+    title: "DSA & Database Problem Solving",
+    subtitle: "150+ LeetCode DSA Solutions & 400+ Oracle SQL Queries",
+    category: "Core CS & Problem Solving",
     featured: true,
-    image: "/projects/codepulse.svg",
-    githubUrl: "https://github.com/santoshpadhiali/Code-Plus-",
-    liveUrl: "https://github.com/santoshpadhiali/Code-Plus-",
-    badge: "Collaboration / Video",
-    badgeColor: "bg-indigo-500/20 text-indigo-400 border-indigo-500/30",
-    summary: "Full-stack real-time collaborative coding platform using React.js, Node.js/Express, MongoDB, and GetStream SDK, featuring live video calls, synchronized editor, and secure multi-language code execution.",
-    description: "CodePulse allows developers to interview, pair program, and brainstorm code in real-time. It features video calls and chat powered by GetStream SDK, a multi-user code editor with real-time cursor synchronisation, and a sandboxed compiler supporting JavaScript, Java, Python, C, and C++ with role-based Clerk authentication.",
+    image: "/projects/problem-solving.svg",
+    githubUrl: "https://github.com/Misspuja12",
+    liveUrl: "https://github.com/Misspuja12",
+    badge: "LeetCode & Oracle SQL",
+    badgeColor: "bg-amber-500/20 text-amber-400 border-amber-500/30",
+    summary: "Solved 150+ DSA problems on LeetCode and 400+ SQL queries on Oracle SQL, strengthening problem-solving, algorithmic thinking, and database querying skills.",
+    description: "A continuous commitment to algorithmic excellence and database query mastery. Rigorously trained in core Data Structures (Arrays, Strings, Linked Lists, Trees, Stacks, Queues) and relational querying spanning complex joins, aggregations, subqueries, and window functions.",
     highlights: [
-      "Integrated GetStream SDK for high-definition live video calling, audio, and room chat",
-      "Multi-user code editor with real-time cursor syncing and simultaneous editing",
-      "Secure sandboxed code execution environment supporting JavaScript, Java, Python, C, and C++",
-      "Clerk-powered authentication with enterprise-grade role-based access control",
-      "Optimized application performance with fast load times and HTTPS security"
+      "Solved 150+ DSA problems on LeetCode strengthening problem-solving, algorithmic thinking, and time/space complexity optimization.",
+      "Executed and mastered 400+ SQL queries on Oracle SQL, strengthening database querying, schema modeling, and transaction management.",
+      "Comprehensive application of Object-Oriented Programming (OOP) paradigms including Polymorphism, Inheritance, Encapsulation, and Abstraction.",
+      "Extensive experience with Regular Expressions (Regex) for data validation and pattern processing."
     ],
     techStack: [
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "GetStream SDK",
-      "Clerk Auth",
-      "Compiler Sandbox",
-      "Tailwind CSS"
+      "Java",
+      "Oracle SQL",
+      "DSA",
+      "LeetCode",
+      "OOP",
+      "DBMS",
+      "Regex"
     ],
     metrics: [
-      { label: "Languages", value: "JS, Java, Py, C, C++" },
-      { label: "Video Calls", value: "GetStream HD" },
-      { label: "Security", value: "Sandboxed Runner" }
+      { label: "LeetCode DSA", value: "150+ Solved" },
+      { label: "Oracle SQL", value: "400+ Queries" },
+      { label: "Focus", value: "Algorithms & Databases" }
     ]
   }
 ];
 
 export const projectFilterCategories = [
   "All",
-  "Full Stack & Web Apps",
-  "AI & Cloud",
-  "Real-time & MERN",
-  "Collaboration & Cloud"
+  "Java Full Stack",
+  "Real-Time & Networking",
+  "Industry Experience & Enterprise",
+  "Core CS & Problem Solving"
 ];

@@ -22,7 +22,7 @@ export const ResumeModal = ({ isOpen, onClose, onDownload }) => {
                 {profileData.name} — Resume
               </h3>
               <p className="text-xs text-slate-400">
-                {profileData.role} • 8.34 CGPA • B.Tech CSE ('26)
+                {profileData.role} • 8.4 CGPA • B.Tech CSE ('26)
               </p>
             </div>
           </div>
@@ -62,7 +62,7 @@ export const ResumeModal = ({ isOpen, onClose, onDownload }) => {
         <div className="flex-1 w-full bg-slate-950 min-h-[500px] overflow-hidden relative">
           <iframe
             src={`${profileData.resume.viewUrl}#toolbar=0`}
-            title="Santosh Padhiali Resume"
+            title={`${profileData.name} Resume`}
             className="w-full h-full min-h-[550px] border-none"
           />
         </div>
@@ -70,7 +70,7 @@ export const ResumeModal = ({ isOpen, onClose, onDownload }) => {
         {/* Footer info bar */}
         <div className="px-6 py-3 border-t border-slate-800 bg-slate-950/90 flex flex-wrap items-center justify-between text-xs text-slate-400">
           <span>Need a direct copy? Click Download above or reach out at <strong className="text-slate-200">{profileData.email}</strong></span>
-          <span className="text-cyan-400 font-medium">Santosh Padhiali • Portfolio</span>
+          <span className="text-cyan-400 font-medium">{profileData.name} • Portfolio</span>
         </div>
       </div>
     </div>

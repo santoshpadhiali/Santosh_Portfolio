@@ -1,4 +1,4 @@
-# 📁 Santosh Portfolio Data Folder
+# 📁 Monalisa Portfolio Data Folder
 
 Welcome to your central portfolio data directory!
 
@@ -9,37 +9,32 @@ Every piece of information shown in your portfolio is controlled by the files in
 ## 🗂 Files Overview:
 
 1. **`profileData.js`**
-   - Your name, role, animated taglines.
+   - Name (Monalisa Behera), role, animated taglines.
    - Bio paragraphs and introduction.
    - Phone number, email address, location, and GitHub profile URL.
-   - Path to your resume PDF file and button labels.
-   - Hero statistics (CGPA, project counts, etc.).
+   - Path to resume PDF file and button labels.
+   - Hero statistics (8.4 CGPA, LeetCode 150+ DSA, Oracle SQL 400+, HAL Internship).
+   - Experience, certifications, and achievements arrays.
 
 2. **`projectsData.js`**
-   - Projects list (CHATliFY, Hire-HUB, CodePulse).
+   - Projects list:
+     - Digital Library Management System (Spring Boot, Hibernate, MySQL)
+     - Chat Next (Real-Time WebSocket STOMP & SockJS)
+     - Complaint Management System (HAL Koraput Division)
+     - DSA & Database Problem Solving (LeetCode & Oracle SQL)
    - Project titles, subtitles, categories, images, and descriptions.
-   - Live demo links and GitHub repository URLs.
-   - Tech stack tags (React, Node, Express, MongoDB, Socket.io, etc.).
-   - Key highlights and metric counters.
+   - GitHub repository URLs.
+   - Tech stack tags.
 
 3. **`skillsData.js`**
-   - Categorized skills: Frontend, Backend, Databases, Core CS, and Dev Tools.
-   - Skill proficiency percentages and badge types.
+   - Categorized skills: Backend & Frameworks (Spring Boot, Hibernate, Core Java), Databases & Querying (Oracle SQL, PostgreSQL, MySQL), Real-Time & Networking (WebSocket STOMP), Frontend (HTML5, CSS3, JS), Core CS (DSA, OOP, Regex, DBMS), and Dev Tools.
 
 4. **`educationData.js`**
-   - Your academic journey timeline:
-     - B.Tech CSE at KMBB College of Engineering & Technology (BPUT)
-     - Intermediate Science at RCM Science College (CHSE)
-     - Matriculation at NH High School (BSE)
-   - Dates, scores/CGPA, descriptions, and key coursework.
+   - Academic journey timeline:
+     - B.Tech in CSE at KMBB College of Engineering & Technology, Under BPUT (8.4 CGPA)
+     - Intermediate Science at Bansadhara Higher Secondary School, Gunupur (79.8%)
+     - Matriculation at Saraswati Vidya Mandir, Kashipur (83.5%)
 
 5. **`navigationData.js`**
    - Navbar links and sections.
-   - Footer text, quick links, and social links (GitHub, Email, Phone, WhatsApp).
-
----
-
-## 💡 Quick Tips:
-- To add a new project, just copy an existing object in `projectsData.js` and paste it with your new project's details!
-- To update your resume, put your new PDF in `public/` and update `profileData.js`.
-
+   - Social links (GitHub, LinkedIn, Email, Phone, WhatsApp) and footer configuration.

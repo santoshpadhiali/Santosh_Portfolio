@@ -8,7 +8,11 @@ import {
   IconPhone,
   IconMapPin,
   IconSparkles,
-  IconBriefcase
+  IconBriefcase,
+  IconAward,
+  IconCalendar,
+  IconCheckCircle,
+  IconCode
 } from './Icons';
 import { profileData } from '../data';
 
@@ -47,7 +51,7 @@ export const About = ({ onDownloadResume, onOpenResumeModal, onShowToast }) => {
             </span>
           </h2>
           <p className="mt-3 text-slate-400 text-base sm:text-lg">
-            A developer who bridges technical problem solving with clean, intuitive software experiences.
+            Aspiring Java Full Stack Developer bridging algorithmic problem-solving with scalable enterprise application architectures.
           </p>
         </div>
 
@@ -58,7 +62,7 @@ export const About = ({ onDownloadResume, onOpenResumeModal, onShowToast }) => {
           <div className="lg:col-span-7 space-y-6">
             <div className="p-7 sm:p-9 rounded-3xl bg-slate-900/70 border border-slate-800/90 shadow-xl space-y-5">
               <h3 className="text-2xl font-bold text-white flex items-center gap-3">
-                <span>Who is Santosh Padhiali?</span>
+                <span>Who is {profileData.name}?</span>
               </h3>
               
               {profileData.bioFull.map((paragraph, idx) => (
@@ -167,8 +171,157 @@ export const About = ({ onDownloadResume, onOpenResumeModal, onShowToast }) => {
                 Seeking Opportunities
               </div>
               <p className="text-sm text-slate-300">
-                Eager to collaborate on innovative projects, continuously learn new technologies, and contribute to team success through dedication and creativity.
+                Seeking an opportunity to apply technical and problem-solving skills in building scalable applications, collaborate on innovative projects, and continuously learn new technologies while contributing to organizational success.
               </p>
+            </div>
+          </div>
+
+        </div>
+
+        {/* Industry Experience Section (HAL Koraput) */}
+        {profileData.experience && profileData.experience.length > 0 && (
+          <div className="mt-16 pt-12 border-t border-slate-800/80">
+            <div className="flex items-center gap-2.5 text-cyan-400 text-xs font-bold uppercase tracking-wider mb-4">
+              <IconBriefcase className="w-4 h-4" />
+              <span>Industry Work Experience</span>
+            </div>
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-8">
+              Professional{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
+                Experience
+              </span>
+            </h3>
+
+            <div className="space-y-6">
+              {profileData.experience.map((exp) => (
+                <div
+                  key={exp.id}
+                  className="p-7 sm:p-8 rounded-3xl bg-slate-900/80 border border-slate-800/90 hover:border-cyan-500/40 shadow-xl transition-all duration-300"
+                >
+                  <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800/80 pb-4 mb-5">
+                    <div>
+                      <div className="flex items-center gap-3 flex-wrap">
+                        <h4 className="text-xl sm:text-2xl font-bold text-white">
+                          {exp.role}
+                        </h4>
+                        <span className={`px-2.5 py-0.5 text-xs font-semibold rounded-full border ${exp.badgeColor}`}>
+                          {exp.badge}
+                        </span>
+                      </div>
+                      <div className="text-base font-semibold text-cyan-400 mt-1">
+                        {exp.company} — <span className="text-slate-300">{exp.division}</span>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-2 text-xs font-semibold text-slate-300 bg-slate-800/80 px-3.5 py-1.5 rounded-xl border border-slate-700">
+                      <IconCalendar className="w-4 h-4 text-cyan-400" />
+                      <span>{exp.period}</span>
+                    </div>
+                  </div>
+
+                  <div className="space-y-3 mb-6">
+                    {exp.points.map((pt, pIdx) => (
+                      <div key={pIdx} className="flex items-start gap-3 text-sm text-slate-300 leading-relaxed">
+                        <IconCheckCircle className="w-4 h-4 text-cyan-400 mt-1 shrink-0" />
+                        <span>{pt}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  {exp.techStack && (
+                    <div className="pt-4 border-t border-slate-800/60 flex flex-wrap items-center gap-2">
+                      <span className="text-xs text-slate-500 font-semibold uppercase tracking-wider mr-2">
+                        Technologies:
+                      </span>
+                      {exp.techStack.map((tech, tIdx) => (
+                        <span
+                          key={tIdx}
+                          className="px-2.5 py-1 text-xs font-semibold rounded-lg bg-slate-800/80 text-cyan-300 border border-slate-700/60"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Certifications & Achievements Grid */}
+        <div className="mt-16 pt-12 border-t border-slate-800/80 grid grid-cols-1 lg:grid-cols-2 gap-10">
+          
+          {/* Certifications Column */}
+          <div>
+            <div className="flex items-center gap-2 text-cyan-400 text-xs font-bold uppercase tracking-wider mb-2">
+              <IconAward className="w-4 h-4" />
+              <span>Training &amp; Credentials</span>
+            </div>
+            <h3 className="text-2xl font-extrabold text-white tracking-tight mb-6">
+              Certifications &amp; Courses
+            </h3>
+
+            <div className="space-y-4">
+              {profileData.certifications.map((cert, cIdx) => (
+                <div
+                  key={cIdx}
+                  className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800/90 hover:border-slate-700 transition-all flex items-start gap-4"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0 mt-0.5">
+                    <IconAward className="w-5 h-5" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center justify-between gap-2 flex-wrap mb-1">
+                      <h4 className="text-base font-bold text-white">{cert.title}</h4>
+                      <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-slate-800 text-cyan-300 border border-slate-700">
+                        {cert.status}
+                      </span>
+                    </div>
+                    <div className="text-xs font-medium text-slate-400 mb-2">
+                      Issuer: <strong className="text-slate-200">{cert.issuer}</strong>
+                    </div>
+                    <p className="text-xs text-slate-300 leading-relaxed">
+                      {cert.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Achievements Column */}
+          <div>
+            <div className="flex items-center gap-2 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-2">
+              <IconSparkles className="w-4 h-4" />
+              <span>Milestones &amp; Problem Solving</span>
+            </div>
+            <h3 className="text-2xl font-extrabold text-white tracking-tight mb-6">
+              Key Achievements
+            </h3>
+
+            <div className="space-y-4">
+              {profileData.achievements.map((ach, aIdx) => (
+                <div
+                  key={aIdx}
+                  className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800/90 hover:border-slate-700 transition-all flex items-start gap-4"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0 mt-0.5">
+                    <IconCheckCircle className="w-5 h-5" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center justify-between gap-2 flex-wrap mb-1">
+                      <h4 className="text-base font-bold text-white">{ach.title}</h4>
+                      <span className="text-xs font-extrabold px-2.5 py-0.5 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                        {ach.metric}
+                      </span>
+                    </div>
+                    <p className="text-xs text-slate-300 leading-relaxed mt-1">
+                      {ach.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -178,4 +331,3 @@ export const About = ({ onDownloadResume, onOpenResumeModal, onShowToast }) => {
     </section>
   );
 };
-

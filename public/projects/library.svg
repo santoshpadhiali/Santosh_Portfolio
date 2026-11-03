@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="libBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#libBg)" />
+
+  <!-- Subtle grid lines -->
+  <g opacity="0.06" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="500" />
+    <line x1="400" y1="0" x2="400" y2="500" />
+    <line x1="600" y1="0" x2="600" y2="500" />
+  </g>
+
+  <!-- App Window Container -->
+  <rect x="35" y="30" width="730" height="440" rx="14" fill="#0b1120" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Window Header Bar -->
+  <rect x="35" y="30" width="730" height="44" rx="14" fill="#131c31" />
+  <rect x="35" y="60" width="730" height="14" fill="#131c31" />
+  <circle cx="60" cy="52" r="5.5" fill="#ef4444" />
+  <circle cx="78" cy="52" r="5.5" fill="#eab308" />
+  <circle cx="96" cy="52" r="5.5" fill="#22c55e" />
+
+  <text x="400" y="57" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle">
+    📚 Digital Library Management System • Spring Boot, Hibernate &amp; MySQL
+  </text>
+
+  <!-- Left Sidebar: Modules Navigation -->
+  <rect x="35" y="74" width="180" height="396" fill="#0d1527" />
+  <line x1="215" y1="74" x2="215" y2="470" stroke="#1e293b" stroke-width="1" />
+
+  <rect x="50" y="95" width="150" height="32" rx="8" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.4" />
+  <text x="80" y="115" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" font-weight="700">📖 Books Catalog</text>
+
+  <rect x="50" y="137" width="150" height="30" rx="8" fill="transparent" />
+  <text x="80" y="156" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">👥 Members (Students)</text>
+
+  <rect x="50" y="177" width="150" height="30" rx="8" fill="transparent" />
+  <text x="80" y="196" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">🔄 Issues &amp; Returns</text>
+
+  <rect x="50" y="217" width="150" height="30" rx="8" fill="transparent" />
+  <text x="80" y="236" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">💳 Fines &amp; Dues</text>
+
+  <rect x="50" y="257" width="150" height="30" rx="8" fill="transparent" />
+  <text x="80" y="276" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">🔐 User Auth (Admin)</text>
+
+  <!-- Sidebar Tech Pill -->
+  <rect x="50" y="420" width="150" height="30" rx="6" fill="#047857" fill-opacity="0.2" stroke="#059669" stroke-opacity="0.3" />
+  <text x="125" y="439" fill="#10b981" font-family="monospace" font-size="10.5" text-anchor="middle">Spring MVC + REST</text>
+
+  <!-- Main Content Dashboard -->
+  <!-- Top KPI Stats Row -->
+  <rect x="235" y="95" width="155" height="70" rx="10" fill="#131d33" stroke="#1e293b" />
+  <text x="250" y="120" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Total Books</text>
+  <text x="250" y="150" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">4,850</text>
+  <text x="345" y="150" fill="#10b981" font-family="system-ui, sans-serif" font-size="11">Active</text>
+
+  <rect x="410" y="95" width="155" height="70" rx="10" fill="#131d33" stroke="#1e293b" />
+  <text x="425" y="120" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Registered Members</text>
+  <text x="425" y="150" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">1,240</text>
+  <text x="520" y="150" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11">Verified</text>
+
+  <rect x="585" y="95" width="160" height="70" rx="10" fill="#131d33" stroke="#1e293b" />
+  <text x="600" y="120" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Issued This Month</text>
+  <text x="600" y="150" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">682</text>
+  <text x="700" y="150" fill="#a855f7" font-family="system-ui, sans-serif" font-size="11">Live</text>
+
+  <!-- Table Header -->
+  <rect x="235" y="185" width="510" height="34" rx="8" fill="#17233f" />
+  <text x="250" y="206" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="700">ISBN / CODE</text>
+  <text x="360" y="206" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="700">BOOK TITLE</text>
+  <text x="520" y="206" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="700">AUTHOR</text>
+  <text x="655" y="206" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="700">STATUS</text>
+
+  <!-- Table Rows -->
+  <rect x="235" y="227" width="510" height="42" rx="6" fill="#0d1629" stroke="#1e293b" />
+  <text x="250" y="252" fill="#38bdf8" font-family="monospace" font-size="11">978-0134685991</text>
+  <text x="360" y="252" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">Effective Java (3rd Edition)</text>
+  <text x="520" y="252" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">Joshua Bloch</text>
+  <rect x="650" y="238" width="80" height="20" rx="10" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-opacity="0.4" />
+  <text x="690" y="252" fill="#34d399" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">Available</text>
+
+  <rect x="235" y="277" width="510" height="42" rx="6" fill="#0f192e" stroke="#1e293b" />
+  <text x="250" y="302" fill="#38bdf8" font-family="monospace" font-size="11">978-0132350884</text>
+  <text x="360" y="302" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">Clean Code &amp; Architecture</text>
+  <text x="520" y="302" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">Robert C. Martin</text>
+  <rect x="650" y="288" width="80" height="20" rx="10" fill="#38bdf8" fill-opacity="0.2" stroke="#38bdf8" stroke-opacity="0.4" />
+  <text x="690" y="302" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">Issued</text>
+
+  <rect x="235" y="327" width="510" height="42" rx="6" fill="#0d1629" stroke="#1e293b" />
+  <text x="250" y="352" fill="#38bdf8" font-family="monospace" font-size="11">978-1491950357</text>
+  <text x="360" y="352" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">Spring Boot: Up &amp; Running</text>
+  <text x="520" y="352" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">Mark Heckler</text>
+  <rect x="650" y="338" width="80" height="20" rx="10" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-opacity="0.4" />
+  <text x="690" y="352" fill="#34d399" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">Available</text>
+
+  <!-- Bottom Architecture Stack Pill -->
+  <rect x="235" y="390" width="510" height="55" rx="10" fill="#0a1222" stroke="#1e293b" />
+  <text x="250" y="414" fill="#64748b" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700" text-transform="uppercase">Backend Architecture &amp; Database</text>
+  <text x="250" y="433" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="11.5">
+    Java 17 • Spring Boot 3 • Hibernate ORM • MySQL Database • RESTful API Design • MVC Pattern
+  </text>
+</svg>
+
